@@ -1,3 +1,5 @@
+//alert("Welcome to my web site!");
+
 //Define a function to call when the button is clicked
 function getWeatherInfo(){
 	console.log("Getting weather information!");
@@ -26,6 +28,10 @@ function getWeatherInfo(){
 
 //Get the button
 var theButton = document.getElementById('search');
-//Add a listener to the button
-theButton.addEventListener('click', getWeatherInfo);
+//Attach an event to the button to the button
+theButton.onclick = getWeatherInfo;
 
+/*
+//Alt Approach - use addEventListener
+theButton.addEventListener('click', getWeatherInfo);
+*/

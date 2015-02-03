@@ -42,18 +42,10 @@ button{
 	text-align: center;
 	font-weight: bold;
 	font-size: 20px;
-	height: 40px;
 	width: 20%;
+/*	height: 30px;*/
 	margin-top: 10px;
-	border: 2px none;
-	border-radius: 10px;
 }
-
-button:hover{
-	background-color: rgb(76, 126, 242);
-	color: white;
-}
-
 
 #weatherResults{
 	width: 100%;
@@ -80,7 +72,7 @@ button:hover{
 	background-color: rgb(200,100,100);
 }
 .orangeBg{
-	background-color: rgb(255, 210, 95)
+	background-color: rgb(255, 185, 0)
 }
 .yellowBg{
 	background-color: rgb(245,210,0);
