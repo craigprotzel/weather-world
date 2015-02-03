@@ -1,3 +1,5 @@
+**Note** - this is a working document, current status is rough draft
+
 WEATHER WORLD TUTORIAL
 ----------------------
 Idea - Let's make a super simple weather appplication that runs on the web. You type in the name of a city and get the current temperature for that city. 
