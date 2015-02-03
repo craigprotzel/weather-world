@@ -5,7 +5,7 @@ body{
 	font-size: 24px;
 }
 
-header{
+.top{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -13,7 +13,7 @@ header{
 	height: 200px;
 }
 
-main{
+.main{
 	margin-top: 200px;
 	border-style: solid;
 	border-color: rgb(50,50,50);
@@ -86,4 +86,3 @@ button{
 .grayBg{
 	background-color: rgb(185,185,185);
 }
-

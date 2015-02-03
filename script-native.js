@@ -28,7 +28,7 @@ function getWeatherInfo(){
 
 //Get the button
 var theButton = document.getElementById('search');
-//Attach an event to the button to the button
+//Attach an event to the button
 theButton.onclick = getWeatherInfo;
 
 /*
