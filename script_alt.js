@@ -8,7 +8,8 @@ function getWeatherInfo(){
 	console.log(theInputValue);
 
 	var weatherURL = 'http://api.openweathermap.org/data/2.5/weather?units=metric&q=';
-	var searchURL = weatherURL + theInputValue;
+	var apiID = "&APPID=YOUR-APP-ID";
+	var searchURL = weatherURL + theInputValue + appID;
 
 	$.getJSON(searchURL,
 			function(data){

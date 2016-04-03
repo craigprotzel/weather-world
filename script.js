@@ -5,12 +5,12 @@ This example will search Open Weather for a user submitted entry
 And then populate those results on the page using the jQuery 'append' function
 
 OpenWeather API - http://openweathermap.org/api
+Please sign up on OpenWeatherMap to get your own APPID.
 ------------------------- */
 
 //Define the url for the weather API call
 var weatherBaseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-var weatherQueryParams = '&units=imperial';
-
+var weatherQueryParams = '&units=imperial&APPID=c960511231496eb24d69a6ccdf5afc39';
 
 //Create a function that will generate an HTML string 
 //And then add that string to the page
@@ -19,16 +19,16 @@ function createHTML(cityName, tempValue){
 	if (tempValue >= 90){
 		bgClass = 'redBg';
 	}
-	else if (tempValue < 90 && tempValue >= 70){
+	else if (tempValue < 90 && tempValue >= 80){
 		bgClass = 'orangeBg';
 	}
-	else if (tempValue < 70 && tempValue >= 50){
+	else if (tempValue < 80 && tempValue >= 70){
 		bgClass = 'yellowBg';
 	}
-	else if (tempValue < 50 && tempValue >= 30){
+	else if (tempValue < 70 && tempValue >= 60){
 		bgClass = 'greenBg';
 	}
-	else if (tempValue < 30 && tempValue >= 10){
+	else if (tempValue < 60 && tempValue >= 50){
 		bgClass = 'blueBg';
 	}
 	else{
@@ -41,8 +41,6 @@ function createHTML(cityName, tempValue){
 										'</div>';
 	$('#weatherResults').prepend(htmlString);
 }
-
-
 
 //Create a function that will execute the Weather AJAX call
 var searchWeather = function(city){
@@ -73,35 +71,7 @@ var searchWeather = function(city){
 			var theCity = data.name || '????';
 			var theTemp = Math.round(data.main.temp) || 70;
 
-			/*
-			var bgClass;
-			if (theTemp >= 90){
-				bgClass = 'redBg';
-			}
-			else if (theTemp < 90 && theTemp >= 80){
-				bgClass = 'orangeBg';
-			}
-			else if (theTemp < 80 && theTemp >= 70){
-				bgClass = 'yellowBg';
-			}
-			else if (theTemp < 70 && theTemp >= 60){
-				bgClass = 'greenBg';
-			}
-			else if (theTemp < 60 && theTemp >= 50){
-				bgClass = 'blueBg';
-			}
-			else{
-				bgClass = 'grayBg';
-			}
-
-			var htmlString =	'<div class="setBorder ' + bgClass + '">' +
-													'<div class="weatherCity">' + theCity + '</div>' +
-													'<div class="weatherData">' + theTemp + '</div>' +
-												'</div>';
-			$('#weatherResults').prepend(htmlString);
-			*/ 
-
-			//OR call a function that will create an HTML string & add it to the page
+			//Call a function that will create an HTML string & add it to the page
 			createHTML(theCity, theTemp);
 		}
 	});
