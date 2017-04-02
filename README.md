@@ -6,7 +6,7 @@ Click [HERE](http://craigprotzel.github.io/weather-world) to view a working demo
 A basic client-side weather app example.  
 Uses the [Open Weather Map API](http://openweathermap.org/api) to request weather data.
 
-##WORKSHOP
+## WORKSHOP
 
 IDEA - Let's make a super simple weather appplication that runs on the web. You type in the name of a city and get the current temperature for that city. 
 
@@ -27,7 +27,7 @@ To make this application, we're going to need to cover the following topics:
   * JSON - the weather data
   * jQuery - a javascript library that makes web programming a bit easier for us
 
-###Section 1: The Setup
+### Section 1: The Setup
 Our Goal - build an application consisting of an .html file, a .css file, and a .js file that will run in a browser.
 
 We're going to need a text editor to write our application. Better than a text editor, what we really want is an IDE, an Integrated Development Environment. This is a text editor that has some extra bells and whistles that will make our development lives much easier. I use Sublime Text, but it's up to you which one you'd like to use. I've listed a few options above.
@@ -40,20 +40,20 @@ And the .js file - This will handle the "behavior" of our application. A majorit
 
 Let's review - Our application consists of three main files - (1)an HTML file, (2)a CSS file, and (3)a javascript file. We haven't gotten to this yet, but we are going to use a web API that will help us obtain data. The data will come in via the web in a format called JSON. We can use that data in our application. How we actually get the data into our application and onto the page is for a later section. For now, let's start to build our web page.
 
-###Section 2: HTML
+### Section 2: HTML
 Start by adding some 'markup' to our HTML page. 
 
 Once you have the appropriate markup, open the file in the browser. You can open the file in the browser by double-clicking the file or control-clicking the file and select "Open With" and your browser of choice. I'll be using Google Chrome. Once it opens, you should see the "content" of your markup rendered on a web page.
 
 
-###Section 3: CSS
+### Section 3: CSS
 Now that our initial page is complete, we can add some basic styling to make it look better. We do this in our .css file.
 
 After adding some CSS markup, refresh the browser page and you should see the styles added to the presentation of the content.
 
 We can explore the Developer Tools in the browser to help with our styling.
 
-###Section 4: Javascript
+### Section 4: Javascript
 Now that we have a page that looks semi-presentable, it's time to add in the necessary interactivity. To do this, we'll need to write some code and we're going to write it in javascript. Why javascript, well, javascript is the language of the Web, it comes installed in the browser, and it's well-suited to event-based asynchronous interactions.
 
 Let's start by just adding a ``console.log("Hello");`` to our file.
@@ -70,7 +70,7 @@ In terms of "interactivity", we want to be able to "get" the user input "when" o
 
 Great, we have that all working but now what? We're kind of stuck. We need a way to find out what the temperature is in a city. Fortunately, we can use a free and open weather api service to do this!
 
-###Section 5: The API
+### Section 5: The API
 The [Open Weather API](http://openweathermap.org/api) is a service that lets us use the world wide web to 'ask for' or 'get' (also known as a 'Request') and 'receive' (also known as a 'Response') up-to-the-minute weather information. Ok, great. That's exactly what we need. So, how do we use it? Let's head over to the [Open Weather Map](http://openweathermap.org) website and look around.  
 
 We are on the Open Weather API
@@ -97,5 +97,5 @@ OK, so now we know where to look for JSON data, but how does that help us. Well,
 
 Let's try!
 
-###Section 6: The Data 
+### Section 6: The Data 
 Back in our javascript file, let's define a function called getWeatherData(). A function is an encaspsulated piece of code that can be executed at any time. Inisde the function, we can write all of the code we need to request the appropriate data and add it to the page.
