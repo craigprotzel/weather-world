@@ -10,7 +10,7 @@ Please sign up on OpenWeatherMap to get your own APPID.
 
 //Define the url for the weather API call
 var weatherBaseURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-var weatherQueryParams = '&units=imperial&APPID=c960511231496eb24d69a6ccdf5afc39';
+var weatherQueryParams = '&units=imperial&APPID=9af9987d0f66079a5baa5b00f7f58162';
 
 //Create a function that will generate an HTML string 
 //And then add that string to the page
